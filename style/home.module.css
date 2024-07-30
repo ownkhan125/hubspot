@@ -1,0 +1,378 @@
+/* hero-section */
+.hero-section {
+    background-color: #f6f9fc;
+}
+
+.hero-section .logo-wrapper {
+    height: 25px;
+    width: 25px;
+}
+
+.hero-section ul {
+    padding: 32px 0px;
+}
+
+.hero-section ul li {
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #eaf0f6;
+    box-shadow: none;
+    padding: 16px 12px;
+}
+
+.hero-section ul li .accordian {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section ul li .content {
+    margin-top: 5px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.hero-section ul li.isopen .content {
+    max-height: 200px;
+}
+
+/* .cardb{
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s linear;
+}
+
+  .card-content{
+    height: 100px;
+    overflow-y: scroll;
+    margin-bottom: 24px;
+    transition: 0.5s linear;
+
+  } */
+
+/* hero-section */
+
+
+/* logo-section */
+/* .swiper-container {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: 0px auto;
+  }
+
+  .swiper-slide {
+    width: 160px !important;
+    margin: 0px 15px;
+    background-color: #f0f0f0; 
+  }
+
+  .swiper-button-prev1,
+  .swiper-button-next1{
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    min-width: 48px;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    width: 48px;
+    box-shadow: 1px 1px 9px rgba(33, 51, 67, .12);
+  }
+   .cl-icon {
+    height: 50%;
+    width: 50%;
+    fill: #213343;
+    pointer-events: none;
+}
+  .swiper-button-prev1{
+    right: 10px;
+    transform: translateY(50%);
+  }
+  .swiper-button-next1{
+    left: 10px;
+    transform: translateY(50%);
+  } */
+
+
+/* logo-section */
+
+
+/* marketing-section */
+.marketing-section {
+    background-color: #f6f9fc;
+}
+
+/* styles.css */
+.marketing-section .video-container {
+    position: relative;
+    width: 100%;
+    background: #000;
+    /* Fallback color */
+    padding-top: 56.25%;
+}
+
+.marketing-section .video-element {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+/* marketing-section */
+
+
+/* Grows-section */
+.grows-section {
+    background-color: #f6f9fc;
+}
+
+.grow-card {
+    border: 1px solid #dbe4ed;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: none;
+    margin: 0 auto;
+    max-width: 24%;
+    width: 100%;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.grow-card .logo-wrapper {
+    max-width: 100px;
+}
+
+.grow-card ul li {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin: 5px 0px;
+}
+
+
+/* Grows-section */
+
+/* service-section */
+.service-section .img-wrapper {
+    max-width: 100px;
+    margin: 0px auto;
+}
+
+.service-section .number-card {
+    width: 100%;
+    background-color: #f6f9fc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(33, 51, 67, .12);
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+
+/* service-section */
+
+
+/* achievement-section */
+.achievement-section {
+    background-color: #f6f9fc;
+}
+
+.achievement-section .achievcard {
+    width: 32%;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgba(33, 51, 67, .12);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.achievement-section .achievcard .img-wrapper {
+    max-width: 150px;
+    margin: 10px auto;
+}
+
+
+/* achievement-section */
+
+/* customer-section */
+.customer-section .tab {
+    padding: 8px 16px 4px;
+    border: transparent;
+    border-bottom: 4px solid transparent;
+    color: #2e475d;
+    cursor: pointer;
+}
+
+.customer-section .tab:hover {
+    background-color: #eaf0f6;
+}
+
+.border {
+    border-bottom: 4px solid #213343;
+}
+
+.customer-section .logo-wrapper {
+    max-width: 200px;
+}
+
+.customer-section .img-wrapper {
+    max-width: 500px;
+    margin: auto;
+}
+
+.customertab {
+    display: none;
+}
+
+
+.customertab.active {
+    display: flex;
+    gap: 20px;
+}
+
+
+.tab.active {
+    border-bottom: 4px solid #213343;
+}
+
+/* customer-section */
+
+
+/* categories-section */
+.categories-section {
+    background-color: #f6f9fc;
+}
+
+.categories-section .card {
+    background-color: #f6f9fc;
+    padding: 40px 24px;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgba(33, 51, 67, .12);
+}
+
+.categories-section .card .img-wrapper {
+    max-width: 100px;
+    margin: auto;
+}
+
+
+/* categories-section */
+
+/* question-section */
+.question-section {
+    background-color: #f6f9fc;
+}
+
+.accordion-single {
+    border: 0.5px solid #b2b2b2;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.accordion-single-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding-left: 20px;
+}
+
+.isopen .accordion-single-content {
+    max-height: 200px;
+}
+
+.icon.isopen {
+    transform: translateY(0%) rotate(90deg);
+}
+
+.icon {
+    transition: all 0.2s linear;
+    transform: translateY(0%) rotateY(0deg);
+}
+
+/* question-section */
+
+
+/* product-section */
+.product-section {
+    background-color: #192733;
+    background-image: url('/images/cross.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.product-section .card {
+    max-width: 280px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 16px;
+    border: 1px solid #b6c7d6;
+    background-color: white;
+}
+
+.product-section .card .img-wrapper {
+    max-width: 32px;
+    margin: 0px auto;
+}
+
+/* product-section */
+
+
+
+@media(max-width:1023px) {
+
+    .grow-card {
+        max-width: 45%;
+        margin: 10px;
+    }
+
+
+}
+
+@media(max-width:767px) {
+
+    .achievement-section .achievcard {
+        width: 80%;
+    }
+
+
+    .customertab.active {
+
+        flex-direction: column-reverse;
+
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .grow-card {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+
+}
