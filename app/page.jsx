@@ -120,7 +120,7 @@ export default function Home() {
             spaceBetween={0}
             slidesPerView={1}
             loop={true}
-            className="mySwiper"
+            className="yourSwiper"
 
             breakpoints={{
               767: {
