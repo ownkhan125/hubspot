@@ -315,6 +315,11 @@ p {
   right: auto;
 }
 
+.swiper-slide {
+  width: 160px !important;
+}
+
+
 
 
 /* media query */

@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Logo from '@/components/Logo';
 
 
 export default function Home() {
@@ -107,13 +108,68 @@ export default function Home() {
       {/* End hero-section */}
 
       {/* Start logo-section */}
-      {/* <div className='container-1'>
-        <div className='text-center flex flex-col gap-[24px] justify-between'>
+      <div className='container-1'>
+        <div className='text-center flex flex-col gap-[24px] justify-between mb-3'>
           <p className='fs-16'>216,000+ customers in over 135 countries grow their businesses with HubSpot</p>
-          <Swiper />
         </div>
 
-      </div> */}
+        <div className='relative'>
+          <Swiper
+            navigation={true}
+            modules={[Navigation]}
+            spaceBetween={0}
+            slidesPerView={1}
+            loop={true}
+            className="mySwiper"
+
+            breakpoints={{
+              767: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+
+            }}
+
+          >
+
+            <SwiperSlide>
+              <Logo img={'/images/casio-logo-2.png'} />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Logo img={'/images/amika for HS Website-1.png'} />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Logo img={'/images/reddit-2.png'} />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Logo img={'/images/Rakuten Advertising.png'} />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Logo img={'/images/weightwatchers.png'} />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Logo img={'/images/MarineMax_Logo_NoTagline-1.png'} />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Logo img={'/images/Fastsigns_logo.svg.png'} />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Logo img={'/images/Monday.com Logo.png'} />
+            </SwiperSlide>
+
+
+
+          </Swiper>
+        </div>
+
+      </div>
       {/* End logo-section */}
 
 

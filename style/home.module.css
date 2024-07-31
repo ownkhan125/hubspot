@@ -13,12 +13,12 @@
 }
 
 .hero-section ul li {
-    margin-bottom: 10px;
-    overflow: hidden;
-    background-color: #fff;
-    border: 1px solid #eaf0f6;
-    box-shadow: none;
+    border: 0.5px solid #b2b2b2;
+    border-radius: 5px;
+    background-color: white;
     padding: 16px 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .hero-section ul li .accordian {
@@ -29,10 +29,11 @@
 }
 
 .hero-section ul li .content {
-    margin-top: 5px;
     max-height: 0px;
+    margin-top: 5px;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .hero-section ul li.isopen .content {
