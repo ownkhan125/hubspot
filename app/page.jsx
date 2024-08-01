@@ -117,14 +117,23 @@ export default function Home() {
           <Swiper
             navigation={true}
             modules={[Navigation]}
-            spaceBetween={0}
-            slidesPerView={1}
+            spaceBetween={10}
+            slidesPerView={2}
             loop={true}
-            className="yourSwiper"
+            className="mySwiper"
 
             breakpoints={{
+
+              500: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+              },
+
+
+
+
               767: {
-                slidesPerView: 3,
+                slidesPerView: 6,
                 spaceBetween: 10,
               },
 
