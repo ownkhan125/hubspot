@@ -30,7 +30,7 @@ const Customercard = ({ month, seat, add, start, list }) => {
                 </div>
 
                 <div>
-                    <Switch
+                    {/* <Switch
                         className='mb-5'
                         onChange={handleChange}
                         checked={checked}
@@ -43,7 +43,7 @@ const Customercard = ({ month, seat, add, start, list }) => {
                         height={70}          // Switch ki height set kar rahe hain
                         width={250}
                     // translate='10px'
-                    />
+                    /> */}
                     <button className='btn-blue'>Talk to Sales</button>
                 </div>
 
