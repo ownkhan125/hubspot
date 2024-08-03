@@ -60,7 +60,7 @@ export default function Home() {
                 <h5 className='my-2'>Marketing Hub®</h5>
               </div>
               <h1 className='my-2'>Marketing Software</h1>
-              <div className='row gap-2 mb-4'>
+              <div className='w-[65%] row gap-2 mb-4'>
                 <button className='btn-blue'>Get a demo</button>
                 <button className='btn'>Get started free</button>
               </div>
@@ -414,7 +414,7 @@ export default function Home() {
 
           </div>
 
-          <div className='flex flex-col md:flex-row gap-5  mx-auto mb-6'>
+          <div className='w-[60%] flex flex-col md:flex-row gap-5 mx-auto  mb-6'>
             <button className='btn-blue'>Get a demo of premium editions</button>
             <button className='btn'>Get started with free tools</button>
           </div>

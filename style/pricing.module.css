@@ -1,0 +1,63 @@
+/* individuals-section */
+.individuals-section ul {
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.individuals-section ul li {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 3px;
+}
+
+.individuals-section ul li:hover {
+    background-color: rgb(229, 245, 248);
+}
+
+.individuals-section ul li.active {
+    background-color: rgb(229, 245, 248);
+    border-left: 4px solid rgb(0, 164, 189);
+
+}
+
+
+.individuals-section .card {
+    border: 1px solid #dbe4ed;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: none;
+    margin: 0 auto;
+    max-width: 32.55%;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+
+
+.individuals-section table td {
+    border: 1px solid rgb(178, 178, 178);
+    text-align: center;
+    padding: 16px 24px;
+}
+
+.textstart {
+    text-align: start !important;
+}
+
+.grade {
+    box-shadow: 4px -50px 110px 100px rgb(255 255 255);
+}
+
+.grade.active {
+    box-shadow: -200px -200px 0px -200px rgb(255, 255, 255);
+}
+
+/* individuals-section */
