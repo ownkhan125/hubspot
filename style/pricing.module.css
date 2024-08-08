@@ -14,16 +14,15 @@
     border-radius: 3px;
 }
 
-.individuals-section ul li:hover {
+.individuals-section ul .link:hover {
     background-color: rgb(229, 245, 248);
 }
 
-.individuals-section ul li.active {
+.individuals-section ul .link.active {
     background-color: rgb(229, 245, 248);
     border-left: 4px solid rgb(0, 164, 189);
 
 }
-
 
 .individuals-section .card {
     border: 1px solid #dbe4ed;
@@ -31,9 +30,8 @@
     border-radius: 2px;
     box-shadow: none;
     margin: 0 auto;
-    max-width: 32.55%;
-    width: 100%;
-    padding: 32px;
+    width: 32.55%;
+    padding: 36px 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,11 +51,82 @@
 }
 
 .grade {
-    box-shadow: 4px -50px 110px 100px rgb(255 255 255);
+    /* fs-14 w-[100%] mt-[-16px] */
+
+    box-shadow: 4px -40px 80px 80px rgb(255 255 255);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -16px;
+    color: #0091ae;
+    width: 100%;
 }
 
 .grade.active {
     box-shadow: -200px -200px 0px -200px rgb(255, 255, 255);
 }
 
+.icon {
+    color: rgb(0, 189, 165);
+    margin: auto;
+    font-size: 22px;
+}
+
 /* individuals-section */
+
+
+/* market-section */
+.market-card {
+    padding: 40px;
+    border: 1px solid rgb(223, 227, 235);
+    box-shadow: none;
+    margin: 60px 0px;
+    width: 100%;
+}
+
+/* market-section */
+
+
+
+@media(max-width:767px) {
+
+    .individuals-section .card {
+        width: 45%;
+        padding: 12px;
+    }
+
+    .individuals-section ul {
+        padding: 0px;
+        border-bottom: 0px;
+    }
+
+    .individuals-section ul li {
+        font-size: 12px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    .individuals-section ul .link.active {
+        background-color: rgb(229, 245, 248);
+        border-left: 4px solid rgb(0, 164, 189);
+
+    }
+
+
+    .market-card {
+        padding: 10px;
+    }
+
+
+
+
+}
+
+
+@media(max-width:600px) {
+    .individuals-section .card {
+        width: 100%;
+    }
+}

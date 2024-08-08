@@ -7,7 +7,7 @@ import { IoIosContact, IoMdClose, IoMdMenu } from "react-icons/io";
 import { PiGlobeStandFill } from 'react-icons/pi';
 import Switch from 'react-switch';
 import { MdMessage } from "react-icons/md";
-import { IoClose, IoSearchOutline } from "react-icons/io5";
+import { IoChevronDown, IoClose, IoSearchOutline } from "react-icons/io5";
 
 
 const Navbar = () => {
@@ -115,7 +115,7 @@ const Navbar = () => {
 
                             <div
                                 class="text-white  hidden lg:flex   items-center justify-between w-full basis-[100%] lg:basis-auto">
-                                <ul class=" flex justify-between  lg:flex-row ">
+                                <ul class=" flex items-center  lg:flex-row ">
                                     <li>
                                         <Link href={'/'}>Product</Link>
                                     </li>
@@ -123,10 +123,77 @@ const Navbar = () => {
                                         <Link href={'/solution'}>Solution</Link>
                                     </li>
                                     <li>
-                                        <Link href={'/pricing'}>Pricing</Link>
+                                        <Link href={'/pricing/marketing'}>Pricing</Link>
                                     </li>
                                     <li>
-                                        <Link href={''}>resources</Link>
+                                        <div className='flex items-center'>
+                                            <Link href={''}>resources</Link>
+                                            <div className='chevron'><IoChevronDown /></div>
+                                        </div>
+                                        <div className='resources-down'>
+                                            <div className='flex items-baseline gap-x-2 p-3'>
+                                                <div>
+                                                    <div className='max-w-[30px]'><img src="/images/1-icon.svg" alt="" /></div>
+                                                </div>
+                                                <div>
+                                                    <p className='text-[16px] font-bold'>Education</p>
+                                                    <div className='flex flex-col gap-y-2'>
+                                                        <Link href={'/blog'}><p>Blog</p></Link>
+                                                        <p>Ebooks, Guides & More</p>
+                                                        <p>Free Courses & Certifications</p>
+                                                        <p>What is  Inbound Marketing</p>
+                                                        <p>Inbounding 2024</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div className='flex items-baseline gap-x-2 p-3'>
+                                                <div>
+                                                    <div className='max-w-[30px]'><img src="/images/1-icon.svg" alt="" /></div>
+                                                </div>
+                                                <div>
+                                                    <p className='text-[16px] font-bold'>Why hubspot?</p>
+                                                    <div className='flex flex-col gap-y-2'>
+                                                        <p>Case Studies</p>
+                                                        <p>Why Choose Hubspot?</p>
+                                                        <p>Free Courses & Certifications</p>
+                                                        <p>Spotlight Product: updates</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div className='flex items-baseline gap-x-2 p-3'>
+                                                <div>
+                                                    <div className='max-w-[30px]'><img src="/images/1-icon.svg" alt="" /></div>
+                                                </div>
+                                                <div>
+                                                    <p className='text-[16px] font-bold'>Services</p>
+                                                    <div className='flex flex-col gap-y-2'>
+                                                        <p>Onboarding & Consulting Services</p>
+                                                        <p>Hire a Service Provider</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div className='flex items-baseline gap-x-2 p-3'>
+                                                <div>
+                                                    <div className='max-w-[30px]'><img src="/images/1-icon.svg" alt="" /></div>
+                                                </div>
+                                                <div>
+                                                    <p className='text-[16px] font-bold'>User Resources</p>
+                                                    <div className='flex flex-col gap-y-2'>
+                                                        <p>What's New </p>
+                                                        <p>Partner Programs</p>
+                                                        <p>Developers Tools</p>
+                                                        <p>Community</p>
+                                                        <p>Hubspot Ecosystem</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
 
                                 </ul>

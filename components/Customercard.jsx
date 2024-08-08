@@ -17,20 +17,21 @@ const Customercard = ({ month, seat, add, start, list }) => {
     return (
         <>
             <div className={style.card}>
-                <div className='flex items-center bg-green-400 rounded-md p-2 absolute top-2 right-2'>
-                    <span className='text-[10px] uppercase text-white text-center'>recommended</span>
-                </div>
-                <div className='my-4'>
-                    <h4 className='mb-6'>Professional Customer Platform</h4>
-                    <p className='fs-14 mb-4'>Comprehensive marketing, sales, customer service, content, and operations software</p>
-                    <span className='fs-12'>Starts at</span>
-                    <h5 className='mb-4'>{month}</h5>
-                    <p className='fs-14'>{seat}</p>
-                    <p className='fs-14 mb-6'>{add}</p>
-                </div>
+                <div className='flex flex-col justify-between h-full gap-4'>
+                    <div className='flex items-center bg-green-400 rounded-md p-2 absolute top-2 right-2'>
+                        <span className='text-[10px] uppercase text-white text-center'>recommended</span>
+                    </div>
+                    <div className=''>
+                        <h4 className='mb-6'>Professional Customer Platform</h4>
+                        <p className='fs-14 mb-4'>Comprehensive marketing, sales, customer service, content, and operations software</p>
+                        <span className='fs-12'>Starts at</span>
+                        <h5 className='mb-4'>{month}</h5>
+                        <p className='fs-14'>{seat}</p>
+                        <p className='fs-14'>{add}</p>
+                    </div>
 
-                <div>
-                    {/* <Switch
+                    <div>
+                        {/* <Switch
                         className='mb-5'
                         onChange={handleChange}
                         checked={checked}
@@ -44,9 +45,9 @@ const Customercard = ({ month, seat, add, start, list }) => {
                         width={250}
                     // translate='10px'
                     /> */}
-                    <button className='btn-blue'>Talk to Sales</button>
+                        <button className='btn-blue'>Talk to Sales</button>
+                    </div>
                 </div>
-
 
 
                 <div>

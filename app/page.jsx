@@ -291,7 +291,6 @@ export default function Home() {
       </div>
 
 
-
       {/* End resources-section */}
 
 
