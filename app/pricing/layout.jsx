@@ -7,7 +7,7 @@ const PricingLayout = ({ children }) => {
 
 
     return (
-        <div className={style['individuals-section']}>
+        <div className={`${style['individuals-section']} container-2`}>
 
 
             <div className='flex flex-col md:flex-row '>

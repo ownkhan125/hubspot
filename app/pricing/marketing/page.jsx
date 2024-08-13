@@ -5,11 +5,11 @@
 import Customercard from '@/components/Customercard';
 import { FaCheckCircle } from 'react-icons/fa';
 import style from '@/style/pricing.module.css';
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import Marketingcard from '@/components/Marketingcard';
 import { tableJSON } from '@/json/table';
 
-const page = ({params}) => {
+const page = ({ params }) => {
     const [showAll, setShowAll] = useState(false);
     const [table, setTable] = useState([]);
 
@@ -62,30 +62,30 @@ const page = ({params}) => {
 
 
                 <div className='flex flex-wrap justify-around gap-1 mb-10'>
+                    
+                        <Customercard
+                            month={'$0'}
+                            // seat={'Include seate 5'}
+                            // add={'Additional seats start at $45/mo'}
+                            start={'Includes'}
+                            list={list}
+                        />
+                        
+                        <Customercard
+                            month={'$800/mo'}
+                            seat={'Include seate 5'}
+                            add={'Additional seats start at $45/mo'}
+                            start={'Starter Plus'}
+                            list={list}
+                        />
 
-                    <Customercard
-                        month={'$0'}
-                        // seat={'Include seate 5'}
-                        // add={'Additional seats start at $45/mo'}
-                        start={'Includes'}
-                        list={list}
-                    />
-
-                    <Customercard
-                        month={'$800/mo'}
-                        seat={'Include seate 5'}
-                        add={'Additional seats start at $45/mo'}
-                        start={'Starter Plus'}
-                        list={list}
-                    />
-
-                    <Customercard
-                        month={'$1000/mo'}
-                        seat={'Include seate 15'}
-                        add={'Additional seats start at $75/mo'}
-                        start={'Professinal Customer Platform'}
-                        list={list}
-                    />
+                        <Customercard
+                            month={'$1000/mo'}
+                            seat={'Include seate 15'}
+                            add={'Additional seats start at $75/mo'}
+                            start={'Professinal Customer Platform'}
+                            list={list}
+                        />
 
 
                 </div>
@@ -113,6 +113,7 @@ const page = ({params}) => {
 
                         {
                             table.slice(0, showAll ? table.length : 7).map((item, index) => (
+
                                 <tr>
                                     <td className={style.textstart} key={index}>
                                         <p className='fs-14'>{item.heading}</p>
@@ -126,8 +127,6 @@ const page = ({params}) => {
                                         <p className='text-sm'>{item.enterprises}</p>
                                     </td>
                                 </tr>
-
-
                             ))
                         }
 

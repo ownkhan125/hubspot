@@ -47,8 +47,9 @@ const Sidebar = () => {
 
     return (
         <>
-            {/* individual  s-section */}
-            <div className={`container-2 ${down ? 'active' : ''}`} onClick={() => drop()}>
+            {/* individuals-section */}
+
+            <div className={`${down ? 'active' : ''}`} onClick={() => drop()}>
                 <div className='fs-16 mb-3 '> <p id='main'>Platform Solution</p></div>
                 <ul>
                     <li><Link href={''}>Customer Platform</Link></li>
@@ -59,8 +60,8 @@ const Sidebar = () => {
 
                 <p className='fs-16 mb-3'>Products</p>
                 <ul>
-                    <li className={`${style.link} ${activeLink === '/pricing/marketing' ? style.active : ''}`}><Link href={'/pricing/marketing'} >Marketing</Link></li>
-                    <li className={`${style.link} ${activeLink === '/pricing/sales' ? style.active : ''}`}><Link href={'/pricing/sales'}>Sales</Link></li>
+                    <Link href={'/pricing/marketing'} scroll={false} ><li className={`${style.link} ${activeLink === '/pricing/marketing' ? style.active : ''}`}>Marketing</li></Link>
+                    <Link href={'/pricing/sales'} scroll={false}> <li className={`${style.link} ${activeLink === '/pricing/sales' ? style.active : ''}`}>Sales</li></Link>
                     <li className={`${style.link} `}><Link href={''}>Service</Link></li>
                     <li className={`${style.link} `}><Link href={''}>Content</Link></li>
                     <li className={`${style.link} `}><Link href={''}>Operation</Link></li>

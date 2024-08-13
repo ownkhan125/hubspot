@@ -214,6 +214,37 @@ p {
 
 
 
+.overflow-auto::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+}
+
+/* Scrollbar track */
+.overflow-auto::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  display: none;
+  /* Track color */
+  border-radius: 10px;
+  /* Rounded corners */
+}
+
+/* Scrollbar handle (thumb) */
+.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: #888;
+  margin-right: -50px;
+  /* Color of the scroll thumb */
+  border-radius: 10px;
+  /* Rounded corners */
+  border: 3px solid #f0f0f0;
+  /* Space around the thumb */
+}
+
+/* Scrollbar handle (thumb) when hovered */
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Darker thumb on hover */
+}
+
 /* section */
 
 /* navbar section */
@@ -346,7 +377,7 @@ input.isopen {
   cursor: pointer;
 }
 
-.resources-down a{
+.resources-down a {
   padding: 0px !important;
 }
 
