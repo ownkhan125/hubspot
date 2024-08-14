@@ -3,30 +3,41 @@
 import { Suspense, useEffect, useState } from 'react';
 import style from '@/style/blog.module.css';
 import { useRouter } from 'next/navigation';
+import product from '@/api/product';
 
 
 const page = () => {
+
     const [data, setData] = useState([]);
     const router = useRouter();
 
 
     useEffect(() => {
+        const fetchData = async () => {
+            const getdata = await product();  // Await the result from the product function
+            setData(getdata);  // Set the fetched data into the state
+        };
 
-        (async () => {
-            try {
+        fetchData();
+    }, []);
 
-                await fetch('https://fakestoreapi.com/products')
-                    .then(res => res.json())
-                    .then(val =>
-                        setData(val),
+    // useEffect(() => {
 
-                    )
+    //     (async () => {
+    //         try {
 
-            } catch (error) {
-                console.log(error?.message);
-            }
-        })();
-    }, [])
+    //             await fetch('https://fakestoreapi.com/products')
+    //                 .then(res => res.json())
+    //                 .then(val =>
+    //                     setData(val),
+
+    //                 )
+
+    //         } catch (error) {
+    //             console.log(error?.message);
+    //         }
+    //     })();
+    // }, [])
 
 
     const handle = (id) => {
@@ -83,4 +94,5 @@ const page = () => {
     )
 }
 
-export default page
+export default page;
+
