@@ -8,7 +8,6 @@ import Image from "next/image";
 const page = () => {
     return (
         <>
-
             <Image
                 src="/images/best.png"
                 alt="this is image optimization"
