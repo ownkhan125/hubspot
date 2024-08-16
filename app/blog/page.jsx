@@ -3,8 +3,8 @@
 import { Suspense, useEffect, useState } from 'react';
 import style from '@/style/blog.module.css';
 import { useRouter } from 'next/navigation';
-import product from '@/api/product';
-
+import product from '@/services/product';
+import Loading from '@/app/loading';
 
 const page = () => {
 
@@ -69,9 +69,9 @@ const page = () => {
                         </div>
                         <div className=' max-h-[600px] overflow-auto pe-4'>
                             <div>
-                                {
-                                    data.map((item, index) => (
-                                        <Suspense fallback={<div >Loading products...</div>}>
+                                <Suspense fallback={<Loading />}>
+                                    {
+                                        data.map((item, index) => (
                                             <div key={index} className='cursor-pointer border-b-2 border-[#dbe4ed;] py-4 flex flex-col gap-y-2 justify-between' onClick={() => handle(item.id)}>
                                                 <p className='text-sm font-semibold underline underline-offset-1'>{item.title}</p>
                                                 <div className='flex justify-between'>
@@ -79,9 +79,9 @@ const page = () => {
                                                     <span className='text-sm font-light'>{item.rating.count}</span>
                                                 </div>
                                             </div>
-                                        </Suspense>
-                                    ))
-                                }
+                                        ))
+                                    }
+                                </Suspense>
                             </div>
                         </div>
                     </div>

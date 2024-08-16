@@ -62,7 +62,7 @@ const Sidebar = () => {
                 <ul>
                     <Link href={'/pricing/marketing'} scroll={false} ><li className={`${style.link} ${activeLink === '/pricing/marketing' ? style.active : ''}`}>Marketing</li></Link>
                     <Link href={'/pricing/sales'} scroll={false}> <li className={`${style.link} ${activeLink === '/pricing/sales' ? style.active : ''}`}>Sales</li></Link>
-                    <li className={`${style.link} `}><Link href={''}>Service</Link></li>
+                    <Link href={'/pricing/service'} scroll={false}> <li className={`${style.link} ${activeLink === '/pricing/service' ? style.active : ''}`}>Service</li></Link>
                     <li className={`${style.link} `}><Link href={''}>Content</Link></li>
                     <li className={`${style.link} `}><Link href={''}>Operation</Link></li>
                     <li className={`${style.link} `}><Link href={''}>Commerce</Link></li>
